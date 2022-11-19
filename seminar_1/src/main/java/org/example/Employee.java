@@ -1,7 +1,7 @@
 package org.example;
 
 public abstract class Employee {
-    protected static int count_of_employees = 0;
+    protected static int countOfEmployees = 0;
     protected final String name;
     protected final int age;
     protected int salary;
@@ -9,7 +9,7 @@ public abstract class Employee {
     protected Boolean isFired = false;
 
     protected Employee(String name, int age, int salary, int balance) {
-        ++count_of_employees;
+        ++countOfEmployees;
         this.name = name;
         this.age = age;
         this.salary = salary;

@@ -24,14 +24,14 @@ class ManagerTest {
 
         manager.sayHello();
 
-        String static_info_line = "There is " + Manager.count_of_managers + " manager(-s) in our company";
+        String staticInfoLine = "There is " + Manager.countOfManagers + " manager(-s) in our company";
 
         assertEquals("Hello, my name is Fedor!" + System.lineSeparator() +
                             "I'm 19 y.o." + System.lineSeparator() +
                             "My salary is 400" + System.lineSeparator() +
                             "My balance is 2500" + System.lineSeparator() +
                             "My scope is HR" + System.lineSeparator() +
-                            static_info_line + System.lineSeparator(), output.toString());
+                            staticInfoLine + System.lineSeparator(), output.toString());
     }
 
     @Test

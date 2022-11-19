@@ -1,13 +1,13 @@
 package org.example;
 
 public class Manager extends Employee {
-    protected static int count_of_managers = 0;
+    protected static int countOfManagers = 0;
     protected String scope;
 
     public Manager(String name, int age, int salary, int balance, String scope) {
         super(name, age, salary, balance);
         this.scope = scope;
-        ++count_of_managers;
+        ++countOfManagers;
     }
 
     @Override
@@ -15,7 +15,7 @@ public class Manager extends Employee {
         super.sayHello();
         if (!isFired) {
             System.out.printf("My scope is %s" + System.lineSeparator(), scope);
-            System.out.printf("There is %s manager(-s) in our company" + System.lineSeparator(), count_of_managers);
+            System.out.printf("There is %s manager(-s) in our company" + System.lineSeparator(), countOfManagers);
         }
     }
 
