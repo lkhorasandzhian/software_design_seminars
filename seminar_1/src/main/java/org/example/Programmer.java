@@ -28,6 +28,11 @@ public final class Programmer extends Employee {
         }
     }
 
+    @Override
+    public void sayWorkRole() {
+        System.out.println("I'm programmer");
+    }
+
     public void learnNewProgrammingLanguage(String language) {
         if (programming_languages.contains(language)) {
             System.out.printf("I already know %s\r\n", language);

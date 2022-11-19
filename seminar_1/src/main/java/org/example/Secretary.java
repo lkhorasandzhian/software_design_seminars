@@ -16,6 +16,11 @@ public final class Secretary extends Employee {
         }
     }
 
+    @Override
+    public void sayWorkRole() {
+        System.out.println("I'm secretary");
+    }
+
     public void changeCoffee(String new_coffee) {
         if (new_coffee == null) {
             System.out.println("Undefined coffee");

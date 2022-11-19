@@ -19,6 +19,11 @@ public class Manager extends Employee {
         }
     }
 
+    @Override
+    public void sayWorkRole() {
+        System.out.println("I'm manager");
+    }
+
     public final void changeScope(String new_scope) {
         if (new_scope == null) {
             System.out.println("Undefined scope");

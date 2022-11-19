@@ -30,11 +30,9 @@ public class Main {
             System.out.println();
         }
 
-        System.out.println("\n\n");
-
         for (var employee : array) {
+            employee.sayWorkRole();
             executive.fireEmployee(employee);
-            employee.sayHello();
         }
     }
 }

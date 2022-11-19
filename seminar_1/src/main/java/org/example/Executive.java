@@ -18,6 +18,11 @@ public final class Executive extends Manager {
         }
     }
 
+    @Override
+    public void sayWorkRole() {
+        System.out.println("I'm executive");
+    }
+
     public void payManagerSalary(Manager manager) {
         if (isFired) {
             System.out.println("At first I need to be hired to start working...");

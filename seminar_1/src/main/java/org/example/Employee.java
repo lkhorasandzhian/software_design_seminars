@@ -26,4 +26,6 @@ public abstract class Employee {
             System.out.println("I'm fired...");
         }
     }
+
+    protected abstract void sayWorkRole();
 }
