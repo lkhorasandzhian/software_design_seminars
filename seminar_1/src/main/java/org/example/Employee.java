@@ -1,6 +1,7 @@
 package org.example;
 
 public abstract class Employee {
+    protected static int remainingWorkloadPercent = 100;
     protected static int countOfEmployees = 0;
     protected final String name;
     protected final int age;

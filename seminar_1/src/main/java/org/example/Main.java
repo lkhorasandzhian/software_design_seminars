@@ -24,11 +24,17 @@ public class Main {
         array[1] = secretary;
         array[2] = manager;
         array[3] = executive;
+        System.out.println();
 
         for (Employee employee : array) {
             employee.sayHello();
             System.out.println();
         }
+
+        programmer.sayWorkload();
+        secretary.sayWorkload();
+        manager.sayWorkload();
+        executive.sayWorkload();
 
         for (var employee : array) {
             employee.sayWorkRole();

@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.List;
 
-public final class Programmer extends Employee {
+public final class Programmer extends Employee implements IWorkloadable {
     private final List<String> programmingLanguages;
     private int countOfCodeLines;
 
@@ -53,5 +53,12 @@ public final class Programmer extends Employee {
         } else {
             System.out.println("At first I need to be hired to start working...");
         }
+    }
+
+    @Override
+    public void sayWorkload() {
+        int current_workload = remainingWorkloadPercent / 2;
+        remainingWorkloadPercent -= current_workload;
+        System.out.println("My workload is " + current_workload + "% of all");
     }
 }

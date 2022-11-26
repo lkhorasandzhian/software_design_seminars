@@ -54,4 +54,11 @@ public final class Executive extends Manager {
         employee.isFired = true;
         ++countOfFiredEmployees;
     }
+
+    @Override
+    public void sayWorkload() {
+        int current_workload = remainingWorkloadPercent / 4;
+        remainingWorkloadPercent -= current_workload;
+        System.out.println("My workload is " + current_workload + "% of all");
+    }
 }

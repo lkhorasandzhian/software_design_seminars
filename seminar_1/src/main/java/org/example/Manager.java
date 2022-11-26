@@ -1,6 +1,6 @@
 package org.example;
 
-public class Manager extends Employee {
+public class Manager extends Employee implements IWorkloadable {
     protected static int countOfManagers = 0;
     protected String scope;
 
@@ -64,5 +64,12 @@ public class Manager extends Employee {
         }
 
         employee.balance += employee.salary;
+    }
+
+    @Override
+    public void sayWorkload() {
+        int current_workload = remainingWorkloadPercent / 8;
+        remainingWorkloadPercent -= current_workload;
+        System.out.println("My workload is " + current_workload + "% of all");
     }
 }

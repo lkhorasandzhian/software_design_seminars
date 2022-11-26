@@ -1,6 +1,6 @@
 package org.example;
 
-public final class Secretary extends Employee {
+public final class Secretary extends Employee implements IWorkloadable {
     private String favouriteCoffee;
 
     public Secretary(String name, int age, int salary, int balance, String favouriteCoffee) {
