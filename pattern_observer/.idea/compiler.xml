@@ -6,11 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="seminar_1" />
+        <module name="pattern_observer" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="seminar_1" target="19" />
-    </bytecodeTargetLevel>
   </component>
 </project>
