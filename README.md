@@ -16,3 +16,8 @@ Archive of home and seminar tasks
 Дано два потока — производитель и потребитель. Производитель генерирует некоторые данные (числа). Потребитель «потребляет» их.  
 
 Два потока разделяют общий буфер данных, размер которого ограничен. Если буфер пуст, потребитель должен ждать, пока там появятся данные. Если буфер заполнен полностью, производитель должен ждать, пока потребитель заберёт данные и место освободится.
+
+## [annotations](https://github.com/lkhorasandzhian/software_design_seminars/tree/main/annotations)
+
+Дописать код в классе для успешного прохождения юнит-теста из класса [PersonSerializerTest](https://github.com/lkhorasandzhian/software_design_seminars/blob/main/annotations/src/test/java/PersonSerializerTest.java):
+![изображение](https://user-images.githubusercontent.com/105387710/227707698-a311445b-e2cb-42a1-bbe2-4e2eaef8adb6.png)
